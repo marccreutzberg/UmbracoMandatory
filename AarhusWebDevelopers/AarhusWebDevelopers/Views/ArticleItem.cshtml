@@ -1,0 +1,14 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var articleImg = Umbraco.Media(CurrentPage.image);
+}
+<div class="row">
+    <div class="col-md-4">
+        <img width="100%" src="@articleImg.Url" alt="logo" />
+    </div>
+    <div class="col-md-8">
+        @Umbraco.Field("header", insertBefore: "&lt;h1&gt;", insertAfter: "&lt;/h1&gt;")
+        @Umbraco.Field("bodyText")
+    </div>
+</div>

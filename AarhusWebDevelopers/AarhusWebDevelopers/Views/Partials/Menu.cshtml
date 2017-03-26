@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var root = CurrentPage.AncestorOrSelf(1);
+}
+<ul class="nav navbar-nav">
+    @foreach (var page in root.AncestorOrSelf(1).Children.Where("Visible"))
+    {
+        <li>
+            @if (page.Children != null && page.Children.Count() > 0 && page.DocumentTypeAlias == "projectsOverview")
+            {
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@page.Name <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    @foreach (var subPage in page.Children())
+                    {
+                        var isProtected = umbraco.library.IsProtected(subPage.id, subPage.path);
+                        var loginAccess = umbraco.library.IsProtected(subPage.id, subPage.path) && umbraco.library.HasAccess(subPage.id, subPage.path);
+
+                        if (!isProtected || loginAccess)
+                        {
+                            if (subPage.projectStatus == 22)
+                            {
+                                <li>
+                                    <a href="@subPage.Url">@subPage.Name</a>
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
+            }
+            else
+            {
+                <a href="@page.Url">@page.Name</a>
+            }
+        </li>
+    }
+</ul>

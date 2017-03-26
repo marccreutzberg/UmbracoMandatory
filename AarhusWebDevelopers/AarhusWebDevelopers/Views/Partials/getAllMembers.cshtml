@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@{
+    var memberService = ApplicationContext.Current.Services.MemberService;
+
+    //Getting all members with group active
+    var members = memberService.GetMembersByGroup("active");
+}
+
+<div class="row">
+
+    @foreach (var member in members)
+    {
+        //creating a string array from skills split function.
+        String[] skills = member.GetValue("skills").ToString().Split(',');
+
+        //create a output string that takes all skills and makeing a "," between
+        string skillString = string.Join(", ", from skill in skills select umbraco.library.GetPreValueAsString(Convert.ToInt32(skill)));
+
+
+        <div class="col-md-3">
+            <h3>Name @member.Name</h3>
+            <p>Adress: @member.GetValue("address") </p>
+            <p>City:  @member.GetValue("zip") @member.GetValue("city") </p>
+            <p>Email: @member.Email</p>
+            <strong>Skills</strong>
+            <i>@skillString</i>
+        </div>
+    }
+</div>

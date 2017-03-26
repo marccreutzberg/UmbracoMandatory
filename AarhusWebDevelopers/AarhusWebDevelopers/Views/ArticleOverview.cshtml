@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="row">
+	<div class="col-md-12 textCenter">
+		@Umbraco.Field("header", insertBefore: "&lt;h1&gt;", insertAfter: "&lt;/h1&gt;")
+		@Umbraco.Field("bodyText")
+	</div>
+</div>
+		
+		<hr>
+<div class="row">
+	@Html.Partial("getAllArticles")
+</div>

@@ -1,0 +1,60 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using System.Web.Mvc.Html
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using Umbraco.Web.Controllers
+@{
+    var loginModel = new LoginModel();
+
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+    Html.RequiresJs("/umbraco_client/ui/jquery.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.min.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.unobtrusive.min.js");
+}
+@* NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed *@
+@Html.RenderJsHere()
+
+
+@if (!Members.GetCurrentLoginStatus().IsLoggedIn)
+{
+    using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
+    {
+        <h3>login</h3>
+   
+
+        @Html.LabelFor(m => loginModel.Username)
+        @Html.TextBoxFor(m => loginModel.Username)
+        @Html.ValidationMessageFor(m => loginModel.Username)
+
+        <br />
+        @Html.LabelFor(m => loginModel.Password)
+        @Html.PasswordFor(m => loginModel.Password)
+        @Html.ValidationMessageFor(m => loginModel.Password)
+
+        <p class="error"> @Html.ValidationSummary("loginModel", true)</p>
+
+        <button>Login</button>
+    }
+}
+else
+{
+    <p>You are currently logged in as @Members.GetCurrentLoginStatus().Name</p>
+
+    <p>Go To all Users here</p>
+    <a class="btn btn-primary" href="/login/members/">
+        list of all Users
+    </a>
+
+    var logoutModel = new PostRedirectModel();
+    logoutModel.RedirectUrl = CurrentPage.Url;
+
+    using (Html.BeginUmbracoForm<UmbLoginStatusController>("HandleLogout"))
+    {
+        <button>Logout</button>
+        @Html.HiddenFor(m => logoutModel.RedirectUrl)
+    }
+
+}

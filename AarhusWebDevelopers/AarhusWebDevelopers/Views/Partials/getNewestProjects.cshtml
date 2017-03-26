@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var root = CurrentPage.AncestorOrSelf(1);
+    var projects = root.Descendants("projectItem").Where("projectStatus == 22");
+}
+<div class="projectsFrontpage">
+    @foreach (var item in projects.Take(3))
+    {
+        <div class="projectFrontpage">
+            <a href="@item.Url">
+                <h4>@item.Name</h4>
+            </a>
+            <p>@item.bodyText</p>
+            <hr />
+        </div>
+    }
+</div>

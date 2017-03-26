@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var status = Umbraco.GetPreValueAsString(CurrentPage.projectStatus);
+}
+<div class="col-md-8">
+    @Umbraco.Field("header", insertBefore: "&lt;h1&gt;", insertAfter: "&lt;/h1&gt;")
+    @Umbraco.Field("bodyText")
+</div>
+<div class="col-md-4">
+    <h3><i>PROJECT STATUS: <strong>@status</strong></i></h3>
+</div>
