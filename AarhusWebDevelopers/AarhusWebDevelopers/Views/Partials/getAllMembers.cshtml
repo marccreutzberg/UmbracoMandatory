@@ -1,13 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-
-
 @{
     var memberService = ApplicationContext.Current.Services.MemberService;
 
     //Getting all members with group active
     var members = memberService.GetMembersByGroup("active");
 }
-
 <div class="row">
 
     @foreach (var member in members)

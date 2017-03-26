@@ -3786,3 +3786,70 @@ System.Web.HttpCompileException (0x80004005): c:\Users\Marc Creutzberg\Dropbox\1
  2017-03-26 21:19:42,064 [P10884/D2/T90] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username creutzberq@gmail.com from IP address ::1
  2017-03-26 21:19:42,064 [P10884/D2/T90] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: Creutzberq@gmail.com logged in from IP address ::1
  2017-03-26 21:39:15,216 [P10884/D2/T156] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: creutzberq@gmail.com, IP Address: ::1
+ 2017-03-26 21:50:34,865 [P10884/D2/T47] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username creutzberq@gmail.com from IP address ::1
+ 2017-03-26 21:50:34,865 [P10884/D2/T47] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: Creutzberq@gmail.com logged in from IP address ::1
+ 2017-03-26 21:51:29,013 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-03-26 21:51:29,013 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-03-26 21:51:29,013 [P10884/D2/T169] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-03-26 21:51:29,013 [P10884/D2/T92] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-03-26 21:51:29,013 [P10884/D2/T92] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-03-26 21:51:29,029 [P10884/D2/T92] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-03-26 21:51:29,029 [P10884/D2/T123] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-03-26 21:51:29,029 [P10884/D2/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-03-26 21:51:29,029 [P10884/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-03-26 21:51:29,029 [P10884/D2/T15] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-03-26 21:51:46,970 [P10884/D3/T39] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.11 application starting on DESKTOP-8NRU6PR
+ 2017-03-26 21:51:46,985 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-03-26 21:51:46,985 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-03-26 21:51:47,001 [P10884/D3/T39] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-03-26 21:51:47,001 [P10884/D3/T39] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-03-26 21:51:47,001 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-03-26 21:51:47,110 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 96ms)
+ 2017-03-26 21:51:47,173 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-03-26 21:51:47,173 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2017-03-26 21:51:47,173 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-03-26 21:51:47,173 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 0ms)
+ 2017-03-26 21:51:47,173 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-03-26 21:51:47,204 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 22ms)
+ 2017-03-26 21:51:47,204 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-03-26 21:51:47,204 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 3ms)
+ 2017-03-26 21:51:47,282 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-03-26 21:51:47,282 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2017-03-26 21:51:47,282 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-03-26 21:51:47,282 [P10884/D3/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2017-03-26 21:51:47,872 [P10884/D3/T39] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-03-26 21:51:48,033 [P10884/D3/T39] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-03-26 21:51:48,121 [P10884/D3/T39] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-03-26 21:51:48,177 [P10884/D3/T39] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-03-26 21:51:48,189 [P10884/D3/T39] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1238ms)
+ 2017-03-26 21:51:49,259 [P10884/D3/T127] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:61615/umbraco (UmbracoModule request)
+ 2017-03-26 21:51:59,077 [P10884/D2/T100] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment forårsagede nedlukning
+
+_shutDownStack=   ved System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   ved System.Environment.get_StackTrace()
+   ved System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   ved System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   ved System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   ved System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   ved System.Web.DirectoryMonitor.FireNotifications()
+   ved System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   ved System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   ved System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   ved System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   ved System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   ved System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   ved System.Threading.ThreadPoolWorkQueue.Dispatch()
+   ved System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
