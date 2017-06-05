@@ -1,0 +1,88 @@
+﻿ 2017-05-14 14:54:25,110 [P9560/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.11 application starting on DESKTOP-3M12IKH
+ 2017-05-14 14:54:25,122 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-05-14 14:54:25,127 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 5ms)
+ 2017-05-14 14:54:25,166 [P9560/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-05-14 14:54:25,167 [P9560/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-05-14 14:54:25,170 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-05-14 14:54:25,367 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 196ms)
+ 2017-05-14 14:54:25,379 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-05-14 14:54:25,385 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
+ 2017-05-14 14:54:25,386 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-05-14 14:54:25,392 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 6ms)
+ 2017-05-14 14:54:25,400 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-05-14 14:54:25,407 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+ 2017-05-14 14:54:25,407 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-05-14 14:54:25,415 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 7ms)
+ 2017-05-14 14:54:25,436 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-05-14 14:54:25,442 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 6ms)
+ 2017-05-14 14:54:25,443 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-05-14 14:54:25,460 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 17ms)
+ 2017-05-14 14:54:26,306 [P9560/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-14 14:54:26,511 [P9560/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-05-14 14:54:26,524 [P9560/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-05-14 14:54:26,579 [P9560/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-05-14 14:54:26,607 [P9560/D2/T1] WARN  Umbraco.Core.Sync.DatabaseServerMessenger - No last synced Id found, this generally means this is a new server/install. The server will build its caches and indexes, and then adjust its last synced Id to the latest found in the database and maintain cache updates based on that Id.
+ 2017-05-14 14:54:26,649 [P9560/D2/T1] INFO  umbraco.content - Load Xml from file...
+ 2017-05-14 14:54:26,651 [P9560/D2/T1] INFO  umbraco.content - Loaded Xml from file.
+ 2017-05-14 14:54:26,653 [P9560/D2/T1] INFO  umbraco.content - Loading content from database...
+ 2017-05-14 14:54:27,011 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - Rebuilding index, Provider=InternalMemberIndexer, NodeId=-1
+ 2017-05-14 14:54:27,059 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - Start data queries - member, Provider=InternalMemberIndexer, NodeId=-1
+ 2017-05-14 14:54:27,178 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - End data queries - member, took 118ms, Provider=InternalMemberIndexer, NodeId=-1
+ 2017-05-14 14:54:27,178 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - Rebuilding index, Provider=InternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,193 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - Start data queries - content, Provider=InternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,194 [P9560/D2/T6] INFO  UmbracoExamine.DataServices.UmbracoLogService - Field "email" is listed multiple times in the index set "InternalMemberIndexSet". Please ensure all names are unique, Provider=InternalMemberIndexer, NodeId=1109
+ 2017-05-14 14:54:27,239 [P9560/D2/T6] INFO  UmbracoExamine.DataServices.UmbracoLogService - Field "email" is listed multiple times in the index set "InternalMemberIndexSet". Please ensure all names are unique, Provider=InternalMemberIndexer, NodeId=1110
+ 2017-05-14 14:54:27,240 [P9560/D2/T6] INFO  UmbracoExamine.DataServices.UmbracoLogService - Field "email" is listed multiple times in the index set "InternalMemberIndexSet". Please ensure all names are unique, Provider=InternalMemberIndexer, NodeId=1111
+ 2017-05-14 14:54:27,436 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-05-14 14:54:27,447 [P9560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 10ms)
+ 2017-05-14 14:54:27,558 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - End data queries - content, took 365ms, Provider=InternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,558 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - Start data queries - media, Provider=InternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,721 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - End data queries - media, took 163ms, Provider=InternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,721 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - Rebuilding index, Provider=ExternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,729 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - Start data queries - content, Provider=ExternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,826 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - End data queries - content, took 97ms, Provider=ExternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,827 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - Start data queries - media, Provider=ExternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,883 [P9560/D2/T1] INFO  UmbracoExamine.DataServices.UmbracoLogService - PerformIndexAll - End data queries - media, took 56ms, Provider=ExternalIndexer, NodeId=-1
+ 2017-05-14 14:54:27,888 [P9560/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2828ms)
+ 2017-05-14 14:54:27,982 [P9560/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:61615/umbraco (UmbracoModule request)
+ 2017-05-14 14:54:31,681 [P9560/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2017-05-14 14:54:31,687 [P9560/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2017-05-14 14:54:50,245 [P9560/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-05-14 14:54:50,253 [P9560/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 7ms)
+ 2017-05-14 14:54:50,341 [P9560/D2/T10] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username admin from IP address ::1
+ 2017-05-14 14:54:58,676 [P9560/D2/T10] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username creutzberq@gmail.com from IP address ::1
+ 2017-05-14 14:54:58,677 [P9560/D2/T10] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: Creutzberq@gmail.com logged in from IP address ::1
+ 2017-05-14 14:54:58,857 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-14 14:54:58,866 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 9ms)
+ 2017-05-14 14:54:58,928 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-05-14 14:54:58,958 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 28ms)
+ 2017-05-14 14:54:59,109 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-14 14:54:59,110 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-05-14 14:54:59,111 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-05-14 14:54:59,128 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 17ms)
+ 2017-05-14 14:54:59,137 [P9560/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-05-14 14:54:59,146 [P9560/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 9ms)
+ 2017-05-14 14:55:04,617 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-05-14 14:55:04,643 [P9560/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 25ms)
+ 2017-05-14 14:55:28,196 [P9560/D2/T19] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-05-13 14:55:28
+ 2017-05-14 15:14:33,723 [P9560/D2/T83] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: creutzberq@gmail.com, IP Address: ::1
+ 2017-05-14 15:33:58,511 [P9560/D2/T172] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username creutzberq@gmail.com from IP address ::1
+ 2017-05-14 15:33:58,511 [P9560/D2/T172] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: Creutzberq@gmail.com logged in from IP address ::1
+ 2017-05-14 15:35:21,836 [P9560/D2/T186] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-05-14 15:35:23,474 [P9560/D2/T180] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-05-14 15:35:25,577 [P9560/D2/T188] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-05-14 15:35:25,579 [P9560/D2/T187] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
+ 2017-05-14 15:35:25,579 [P9560/D2/T187] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
+ 2017-05-14 15:35:25,579 [P9560/D2/T187] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
+ 2017-05-14 15:35:25,579 [P9560/D2/T187] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
+ 2017-05-14 15:35:26,381 [P9560/D2/T176] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-05-14 15:53:31,721 [P9560/D2/T68] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: creutzberq@gmail.com, IP Address: ::1
+ 2017-05-14 16:04:01,903 [P9560/D2/T124] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username creutzberq@gmail.com from IP address ::1
+ 2017-05-14 16:04:01,903 [P9560/D2/T124] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: Creutzberq@gmail.com logged in from IP address ::1
+ 2017-05-14 16:11:06,225 [P9560/D2/T66] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-14 16:11:06,226 [P9560/D2/T66] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-05-14 16:36:07,724 [P9560/D2/T107] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: creutzberq@gmail.com, IP Address: ::1
+ 2017-05-14 17:08:24,440 [P9560/D2/T202] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username creutzberq@gmail.com from IP address ::1
+ 2017-05-14 17:08:24,440 [P9560/D2/T202] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: Creutzberq@gmail.com logged in from IP address ::1
+ 2017-05-14 17:27:54,720 [P9560/D2/T200] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: creutzberq@gmail.com, IP Address: ::1
+ 2017-05-14 19:55:13,068 [P9560/D2/T286] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-05-13 19:55:13

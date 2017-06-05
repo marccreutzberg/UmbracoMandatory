@@ -3853,3 +3853,20 @@ _shutDownStack=   ved System.Environment.GetStackTrace(Exception e, Boolean need
    ved System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
    ved System.Threading.ThreadPoolWorkQueue.Dispatch()
    ved System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2017-03-26 21:54:02,218 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-03-26 21:54:02,218 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 0ms)
+ 2017-03-26 21:54:02,250 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-03-26 21:54:02,251 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2017-03-26 21:54:02,711 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-26 21:54:02,711 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2017-03-26 21:54:02,719 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-26 21:54:02,719 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-26 21:54:02,721 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-26 21:54:02,721 [P10884/D3/T47] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2017-03-26 21:54:36,649 [P10884/D3/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-03-26 21:54:36,650 [P10884/D3/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 0ms)
+ 2017-03-26 21:54:40,820 [P10884/D3/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-03-26 21:54:40,821 [P10884/D3/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2017-03-26 21:55:02,065 [P10884/D3/T51] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-25 21:55:02
+ 2017-03-26 21:55:02,159 [P10884/D3/T92] INFO  umbraco.content - Load Xml from file...
+ 2017-03-26 21:55:02,159 [P10884/D3/T92] INFO  umbraco.content - Loaded Xml from file.
