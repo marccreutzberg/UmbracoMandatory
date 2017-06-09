@@ -124,5 +124,6 @@ ul li a {
 .emptyClassForTreeTest{
     color: red;
     background-color: blue;
-    width: 100px;
+    text-align: center;
+    float: right;
 }
