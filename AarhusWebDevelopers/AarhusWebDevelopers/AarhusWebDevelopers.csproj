@@ -554,6 +554,8 @@
     <Content Include="config\Lang\ru-RU.user.xml" />
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="image\bg.jpg" />
     <Content Include="css\main.css" />
     <Content Include="css\RTE.css" />
     <Content Include="default.aspx" />
@@ -561,6 +563,17 @@
     <Content Include="obj\Debug\AarhusWebDevelopers.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\AarhusWebDevelopers.dll" />
     <Content Include="obj\Debug\AarhusWebDevelopers.pdb" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox.min.js" />
     <Content Include="Umbraco\Actions\delete.aspx" />
     <Content Include="Umbraco\Actions\editContent.aspx" />
     <Content Include="Umbraco\Actions\preview.aspx" />
@@ -3311,6 +3324,10 @@
     <Content Include="Views\MacroPartials\ContactForm.cshtml" />
     <Content Include="Views\Members.cshtml" />
     <Content Include="Views\Partials\getAllMembers.cshtml" />
+    <Content Include="Views\Partials\Slider.cshtml" />
+    <Content Include="Views\Partials\newsletter.cshtml" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\MacroPartials\Gallery.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3327,7 +3344,6 @@
     <Folder Include="img\" />
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Scripts\" />
     <Folder Include="Views\ContactFormSurface\" />
   </ItemGroup>
   <ItemGroup>

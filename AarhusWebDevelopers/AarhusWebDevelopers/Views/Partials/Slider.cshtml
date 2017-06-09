@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    var widget = Umbraco.Content(1121);
+    var slides = widget.Descendants("sliderItem");
+}
+
+
+<section class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            @foreach (var item in slides)
+            {
+                var sliderImg = Umbraco.Media(item.image);
+                <li>
+                    <a href="@item.link">
+                        <img width="100%" src="@sliderImg.Url?width=1600&height=400&mode=crop" alt="logo" />
+                         <h3>@item.bodyText</h3>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,48 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+	@{
+		// Henter værdien af de 2 parametre ind i variabler
+		// Parametrene skal oprettes under macroen der ligger i Macros
+		var valgtMedia = Model.MacroParameters["valgtMedia"];
+		var galleriNavn = Model.MacroParameters["galleriNavn"];
+	}
+
+@if(galleriNavn != null)
+{
+	<h3>@galleriNavn</h3>
+}
+@if(valgtMedia != null)
+{
+	<div class="galleri">
+		@foreach(var mediaId in valgtMedia.ToString().Split(','))
+		{
+			var media = Umbraco.Media(mediaId);
+			
+			@* Her er fundet et enkelt billede *@
+			if(media.DocumentTypeAlias == "Image")
+			{
+				@VisBillede(media, @galleriNavn.ToString());
+			}
+							
+			@* Her er fundet en mappe *@
+			if(media.Children("Image").Any())
+			{
+				foreach(var image in media.Children("Image"))
+				{
+					@VisBillede(image, @galleriNavn.ToString());
+				}
+			}
+		}
+	</div>
+}
+
+@helper VisBillede(dynamic item, string galleriNavn)
+{
+     
+var height = Model.MacroParameters["thumbHeight"] != null ? Model.MacroParameters["thumbHeight"] : 200;
+var width = Model.MacroParameters["thumbWidth"] != null ? Model.MacroParameters["thumbWidth"] : 200;
+
+	<a data-lightbox="@galleriNavn" href="@item.umbracoFile">
+		<img src="@item.umbracoFile?width=@width&height=@height&mode=crop" alt="@item.Name" />
+	</a>
+}

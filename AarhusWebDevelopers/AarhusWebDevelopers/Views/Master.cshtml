@@ -13,13 +13,46 @@
     <meta name="description" content="@Umbraco.Field("metaDescription", recursive: true)">
     <meta name="keywords" content="@Umbraco.Field("metaKeywords", recursive: true)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://flexslider.woothemes.com/css/flexslider.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
-    <link href="~/css/main.css" rel="stylesheet" />
+    <script src="~/Scripts/lightbox.min.js"></script>
+    <script src="http://flexslider.woothemes.com/js/jquery.flexslider.js"></script>
+
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true
+            })
+
+
+            $(".spot_newsletter").click(function () {
+
+                $(".newsletter_content").toggle();
+                //$(".newsletter_content").css("display", "block");
+            });
+
+
+            $(".newsletterCreate").click(function () {
+                $(".newsletter_content").css("display", "none");
+            });
+        
+           
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -37,10 +70,8 @@
                 </div>
             </div>
         </header>
-    </div>
 
-    <nav>
-        <div class="container">
+        <nav>
             <div class="row">
                 <div class="col-md-12">
                     <div class="nav navBar-nav">
@@ -48,25 +79,28 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
 
-    <main>
-        <div class="container">
-            <div class="row">
-                @RenderBody()
-            </div>
-        </div>
-    </main>
-    <hr />
-    <footer>
-        <div class="container">
+        </nav>
+        <main>
             <div class="row">
                 <div class="col-md-12">
-                @Umbraco.Field("footer", recursive: true)
+                    @RenderBody()
                 </div>
             </div>
-        </div>
-    </footer>
+
+        </main>
+        <hr />
+        <footer>
+
+            <div class="row">
+                <div class="col-md-12">
+                    @Umbraco.Field("footer", recursive: true)
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    @Html.Partial("newsletter")
 </body>
 </html>

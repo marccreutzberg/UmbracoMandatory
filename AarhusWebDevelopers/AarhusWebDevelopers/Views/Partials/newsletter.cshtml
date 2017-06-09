@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@{
+    var widget = Umbraco.Content(1121);
+
+    var newsletter = widget.Descendants("newsletter").Take(1);
+
+
+    foreach (var item in newsletter)
+    {
+        <div class="newsletter">
+            <div class="spot_newsletter">
+                @item.Header
+            </div>
+            <div class="newsletter_content">
+                <h2>@item.Header</h2>
+                <p>@item.bodyText</p>
+                <input type="text" name="email" value="" placeholder="Email" />
+                <div class="btn btn-warning newsletterCreate">Subscribe</div>
+            </div>
+        </div>
+    }
+
+}
