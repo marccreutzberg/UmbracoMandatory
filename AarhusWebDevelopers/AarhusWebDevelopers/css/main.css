@@ -125,4 +125,6 @@ ul li a {
     color: red;
     background-color: blue;
     width: 100px;
+    height: 50px; 
+    box-shadow: 1px 1px 1px #fff;
 }
